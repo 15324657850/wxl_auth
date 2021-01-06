@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.example.demo.dao.LogMapper">
+  <resultMap id="BaseResultMap" type="com.example.demo.entity.Log">
+    <!--@mbg.generated-->
+    <!--@Table t_log-->
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="user_name" jdbcType="VARCHAR" property="userName" />
+    <result column="log_type" jdbcType="CHAR" property="logType" />
+    <result column="operation" jdbcType="VARCHAR" property="operation" />
+    <result column="ip" jdbcType="VARCHAR" property="ip" />
+    <result column="request_method" jdbcType="VARCHAR" property="requestMethod" />
+    <result column="request_url" jdbcType="VARCHAR" property="requestUrl" />
+    <result column="request_type" jdbcType="VARCHAR" property="requestType" />
+    <result column="request_param" jdbcType="LONGVARCHAR" property="requestParam" />
+    <result column="response_time" jdbcType="INTEGER" property="responseTime" />
+    <result column="is_success" jdbcType="BOOLEAN" property="isSuccess" />
+    <result column="error_message" jdbcType="VARCHAR" property="errorMessage" />
+    <result column="create_time" jdbcType="TIMESTAMP" property="createTime" />
+  </resultMap>
+  <sql id="Base_Column_List">
+    <!--@mbg.generated-->
+    id, user_id, user_name, log_type, `operation`, ip, request_method, request_url, request_type, 
+    request_param, response_time, is_success, error_message, create_time
+  </sql>
+</mapper>
