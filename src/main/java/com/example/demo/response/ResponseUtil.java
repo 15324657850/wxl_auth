@@ -1,6 +1,8 @@
 package com.example.demo.response;
 
 import com.fasterxml.jackson.annotation.JsonInclude;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.ToString;
 
 import java.io.Serializable;
@@ -9,11 +11,13 @@ import java.io.Serializable;
  * @author wxl
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
+@Getter
+@Setter
 @ToString
 public class ResponseUtil<T> implements Serializable {
-    int code;
-    String message;
-    T data;
+    private int code;
+    private String message;
+    private T data;
 
 
     public ResponseUtil(int code) {
