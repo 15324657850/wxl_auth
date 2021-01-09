@@ -25,7 +25,7 @@ public class RoleController {
 
     @DeleteMapping
     @ApiOperation("删除角色")
-    public ResponseUtil delete(@RequestParam int id) {
+    public ResponseUtil<?> delete(@RequestParam int id) {
         return roleService.deleteRole(id);
     }
 

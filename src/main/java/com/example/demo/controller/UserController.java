@@ -24,7 +24,7 @@ public class UserController {
 
     @DeleteMapping
     @ApiOperation("删除用户")
-    public ResponseUtil delete(@RequestParam int id) {
+    public ResponseUtil<?> delete(@RequestParam int id) {
         return userService.deleteUser(id);
     }
 

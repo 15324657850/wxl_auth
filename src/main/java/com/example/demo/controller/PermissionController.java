@@ -24,7 +24,7 @@ public class PermissionController {
 
     @DeleteMapping
     @ApiOperation("删除权限")
-    public ResponseUtil delete(@RequestParam int id) {
+    public ResponseUtil<?> delete(@RequestParam int id) {
         return permissionService.deletePermission(id);
     }
 
